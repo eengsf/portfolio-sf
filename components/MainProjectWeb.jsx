@@ -56,7 +56,7 @@ const obj = {
     name: 'Portfolio',
     desc: 'Personal Website and portfolio built with Nextjs and Tailwind CSS.',
     tech: ['Nextjs', 'TailwindCSS', 'Redux Toolkit', 'Framer Motion'],
-    linkDemo: 'https://portfolio-v2-rho-murex.vercel.app/',
+    linkDemo: 'https://portfolio-sf-seven.vercel.app/',
     linkCode: 'https://github.com/eengsf/portfolio-v2',
   },
 };
