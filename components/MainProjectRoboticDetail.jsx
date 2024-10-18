@@ -18,6 +18,7 @@ const MainProjectRoboticDetail = ({ img, name, desc, linkDemo }) => {
           <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full gap-5 text-white transition-all duration-300 rounded-t-lg opacity-0 bg-black/70 group-hover/project:opacity-100">
             <Link
               href={linkDemo}
+              target="_blank"
               className={`flex gap-3 px-4 py-2 rounded-lg hover:scale-110 ${
                 theme ? 'bg-blue-300 text-black' : 'bg-orange-500 text-white'
               }`}
