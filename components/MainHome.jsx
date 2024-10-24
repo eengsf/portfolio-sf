@@ -25,6 +25,10 @@ const logo = [
     size: 40,
   },
   {
+    name: 'PHP',
+    size: 40,
+  },
+  {
     name: 'TailwindCSS',
     size: 40,
   },
@@ -89,7 +93,7 @@ const MainHome = () => {
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: [100, 0], opacity: [0, 1] }}
       transition={{ duration: 0.7 }}
-      className="pb-12"
+      className="w-full h-full pb-12 overflow-y-auto custom-scrollbar"
     >
       <div className="flex flex-col gap-5 pb-5 border-b border-b-slate-300">
         <div className="flex flex-col gap-2">
@@ -98,7 +102,7 @@ const MainHome = () => {
             <span className="shake">👋</span>
           </h1>
           <div className="flex flex-col gap-5 xs:flex-row">
-            <li className="whitespace-nowrap">Web Programming</li>
+            <li className="whitespace-nowrap">IT Programming</li>
             <li className="whitespace-nowrap">Robotic Programming</li>
           </div>
         </div>
@@ -112,9 +116,9 @@ const MainHome = () => {
         <div className="flex flex-col gap-2">
           <div className="flex gap-2">
             <Logo name="code" size={20} />
-            <h1 className="text-sm font-semibold">Skills Web</h1>
+            <h1 className="text-sm font-semibold">Skills IT</h1>
           </div>
-          <ul className="grid justify-between grid-cols-4 gap-5 2lg:flex">
+          <ul className="grid justify-between grid-cols-4 gap-5 2lg:grid-cols-5">
             {logo.map((item, index) => (
               <li
                 key={index}
@@ -141,7 +145,7 @@ const MainHome = () => {
             <Logo name="code" size={20} />
             <h1 className="text-sm font-semibold">Skills Robotic </h1>
           </div>
-          <ul className="grid justify-between grid-cols-4 gap-5 2md:flex 2md:max-w-lg">
+          <ul className="grid justify-between grid-cols-4 gap-5 2lg:grid-cols-5">
             {logo2.map((item, index) => (
               <li
                 key={index}
