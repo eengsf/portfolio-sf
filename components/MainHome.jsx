@@ -41,6 +41,10 @@ const logo = [
     size: 40,
   },
   {
+    name: 'Laravel',
+    size: 40,
+  },
+  {
     name: 'Firebase',
     size: 40,
   },
@@ -184,7 +188,7 @@ const MainHome = () => {
           </p>
           <Link
             href={
-              'https://drive.google.com/file/d/18-qs5kHcHxY4vEhdluJNGs3srWBhEB6W/view?usp=sharing'
+              'https://drive.google.com/file/d/1TxHxtWc_0wdnuoyw1mn_q-hp-dsl0vRP/view?usp=sharing'
             }
             target="_blank"
             className={`inline-flex gap-2 items-center mt-4 ${

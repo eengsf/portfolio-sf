@@ -22,8 +22,8 @@ const obj = {
       'Redux Toolkit',
       'Firebase',
     ],
-    linkDemo: 'https://car-rental-dun-nine.vercel.app/',
-    linkCode: 'https://github.com/eengsf/car-rental',
+    linkDemo: 'https://rental-mobil-ten.vercel.app/',
+    linkCode: 'https://github.com/eengsf/rental-mobil',
   },
 
   dashboardRental: {
@@ -59,11 +59,19 @@ const obj = {
     linkDemo: 'https://portfolio-sf-seven.vercel.app/',
     linkCode: 'https://github.com/eengsf/portfolio-v2',
   },
+  olshop: {
+    img: 'projectweb/olshopeeng.png',
+    name: 'Eeng Shop',
+    desc: 'An online shop application built using Laravel and Reactjs with Inertia as the frontend. It allows users to browse products with sorting and filtering systems, and add items to their shopping cart.',
+    tech: ['Laravel', 'TailwindCSS', 'Reactjs', 'MySQL'],
+    linkDemo: 'https://olshop-eengsf.vercel.app/',
+    linkCode: 'https://github.com/eengsf/eeng-shop',
+  },
 };
 
 const MainProjectWeb = () => {
   return (
-    <div className="grid w-full grid-cols-1 gap-0 py-8 md:grid-cols-2">
+    <div className="grid w-full grid-cols-1 gap-0 py-8 2md:grid-cols-1 lg:grid-cols-2 sm:grid-cols-2">
       <MainProjectWebDetail
         img={obj.dashboardRental.img}
         name={obj.dashboardRental.name}
@@ -105,6 +113,15 @@ const MainProjectWeb = () => {
         tech={obj.animeListApp.tech}
         linkCode={obj.animeListApp.linkCode}
         linkDemo={obj.animeListApp.linkDemo}
+      />
+
+      <MainProjectWebDetail
+        img={obj.olshop.img}
+        name={obj.olshop.name}
+        desc={obj.olshop.desc}
+        tech={obj.olshop.tech}
+        linkCode={obj.olshop.linkCode}
+        linkDemo={obj.olshop.linkDemo}
       />
     </div>
   );

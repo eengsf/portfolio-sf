@@ -20,8 +20,8 @@ const MainProjectWebDetail = ({
       transition={{ duration: 0.7 }}
       className="p-2"
     >
-      <div className="w-full md:h-[450px] sm:h-[420px] h-full rounded-lg border border-slate-300 group/project transform transition-all duration-300 hover:scale-[102%] pb-4">
-        <div className="w-full md:h-[55%] sm:h-[65%] h-[50%] relative">
+      <div className="w-full border 2lg:aspect-square lg:aspect-[7/8] 2md:aspect-[5/3] md:aspect-[7/8] sm:aspect-[3/4] xs:aspect-[7/6] aspect-square group/project border-slate-300 rounded-lg transform transition-all duration-300 hover:scale-[102%]">
+        <div className="relative w-full overflow-hidden h-1/2">
           <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full gap-5 text-white transition-all duration-300 rounded-t-lg opacity-0 bg-black/70 group-hover/project:opacity-100">
             <Link
               href={linkCode}
@@ -44,19 +44,21 @@ const MainProjectWebDetail = ({
             width={500}
             height={500}
             priority
-            className="object-cover object-top w-full rounded-t-lg"
+            className="object-cover object-top w-full h-full rounded-t-lg"
           />
         </div>
-        <div className="flex flex-col gap-2 justify-between w-full md:h-[45%] sm:h-[35%] h-[50%] p-5">
-          <div className="flex flex-col gap-1">
-            <Link
-              href={linkDemo}
-              target="_blank"
-              className={`font-semibold text-xl hover:text-blue-500`}
-            >
-              {name}
-            </Link>
-            <p className="text-sm text-justify ">{desc}</p>
+        <div className="flex flex-col justify-between w-full gap-2 p-4 h-1/2">
+          <Link
+            href={linkDemo}
+            target="_blank"
+            className={`font-semibold text-[clamp(0.5rem, 2vw, 3rem)] hover:text-blue-500`}
+          >
+            {name}
+          </Link>
+          <div className="h-[70%] overflow-y-auto">
+            <p className="text-sm text-justify md:text-sm sm:text-xs ">
+              {desc}
+            </p>
           </div>
           <div className="relative flex gap-3">
             {tech.map((item, index) => (
@@ -65,7 +67,7 @@ const MainProjectWebDetail = ({
                 className="overflow-x-hidden cursor-pointer group/tech"
               >
                 <Logo name={item} size={24} />
-                <div className="absolute top-0 right-0 transition-all duration-300 opacity-0 -z-10 group-hover/tech:opacity-100 group-hover/tech:z-0">
+                <div className="absolute top-0 right-0 block text-sm transition-all duration-300 opacity-0 sm:hidden -z-10 group-hover/tech:opacity-100 group-hover/tech:z-0 md:block">
                   <p>{item}</p>
                 </div>
               </div>
