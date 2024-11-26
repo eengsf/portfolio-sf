@@ -33,6 +33,7 @@ const sosmed = [
 
 const MainContact = () => {
   const { theme } = useSelector((state) => state.counterSlice);
+
   return (
     <motion.main
       initial={{ y: 100, opacity: 0 }}

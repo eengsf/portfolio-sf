@@ -115,14 +115,14 @@ const MainProjectWeb = () => {
         linkDemo={obj.animeListApp.linkDemo}
       />
 
-      <MainProjectWebDetail
+      {/* <MainProjectWebDetail
         img={obj.olshop.img}
         name={obj.olshop.name}
         desc={obj.olshop.desc}
         tech={obj.olshop.tech}
         linkCode={obj.olshop.linkCode}
         linkDemo={obj.olshop.linkDemo}
-      />
+      /> */}
     </div>
   );
 };

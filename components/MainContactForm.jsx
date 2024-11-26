@@ -5,38 +5,50 @@ import { useSelector } from 'react-redux';
 
 const MainContactForm = () => {
   const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [isSending, setIsSending] = useState(false);
   const { theme } = useSelector((state) => state.counterSlice);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name || !email || !message) {
+
+    if (!name || !message) {
       alert('Please fill all the fields');
       return;
     }
+    const recipient = 'shofiyulfuad797@gmail.com';
+    const subject = `${name}`;
+    const body = `${message}`;
+
+    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+
+    setName('');
+    setMessage('');
   };
+
   return (
     <form
       onSubmit={handleSubmit}
       method="POST"
       className="flex flex-col gap-2 p-2"
     >
-      <div className="flex gap-2">
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Name"
-          autoComplete="off"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          className={`w-1/2 border rounded-lg p-3 outline-1 outline-slate-300 overflow-auto ${
-            theme ? 'bg-white' : 'bg-black'
-          }`}
-        />
-        <input
+      {/* <div className="flex gap-2"> */}
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Name"
+        autoComplete="off"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        className={`w-full border rounded-lg p-3 outline-1 outline-slate-300 overflow-auto ${
+          theme ? 'bg-white' : 'bg-black'
+        }`}
+      />
+      {/* <input
           type="email"
           id="email"
           name="email"
@@ -47,8 +59,8 @@ const MainContactForm = () => {
           className={`w-1/2 border-[3px] rounded-lg p-3 outline-1 overflow-auto outline-slate-300 ${
             theme ? 'bg-white' : 'bg-black'
           }`}
-        />
-      </div>
+        /> */}
+      {/* </div> */}
       <textarea
         id="message"
         name="message"

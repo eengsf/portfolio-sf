@@ -24,10 +24,10 @@ const logo = [
     name: 'TypeScript',
     size: 40,
   },
-  {
-    name: 'PHP',
-    size: 40,
-  },
+  // {
+  //   name: 'PHP',
+  //   size: 40,
+  // },
   {
     name: 'TailwindCSS',
     size: 40,
@@ -44,10 +44,10 @@ const logo = [
     name: 'Nextjs',
     size: 40,
   },
-  {
-    name: 'Laravel',
-    size: 40,
-  },
+  // {
+  //   name: 'Laravel',
+  //   size: 40,
+  // },
   {
     name: 'Firebase',
     size: 40,
@@ -63,10 +63,10 @@ const logo2 = [
     name: 'C Lang',
     size: 40,
   },
-  {
-    name: 'C++',
-    size: 40,
-  },
+  // {
+  //   name: 'C++',
+  //   size: 40,
+  // },
   {
     name: 'Arduino',
     size: 40,
@@ -192,7 +192,7 @@ const MainHome = () => {
           </p>
           <Link
             href={
-              'https://drive.google.com/file/d/1TxHxtWc_0wdnuoyw1mn_q-hp-dsl0vRP/view?usp=sharing'
+              'https://drive.google.com/file/d/1HxEGkASRt8z00xNexP93v2-P8KyCCx9T/view?usp=sharing'
             }
             target="_blank"
             className={`inline-flex gap-2 items-center mt-4 ${
