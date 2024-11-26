@@ -52,12 +52,12 @@ const obj = {
   },
 
   portfolio: {
-    img: 'projectweb/portfolio.png',
+    img: 'projectweb/portfolio-lp.png',
     name: 'Portfolio',
     desc: 'Personal Website and portfolio built with Nextjs and Tailwind CSS.',
-    tech: ['Nextjs', 'TailwindCSS', 'Redux Toolkit', 'Framer Motion'],
-    linkDemo: 'https://portfolio-sf-seven.vercel.app/',
-    linkCode: 'https://github.com/eengsf/portfolio-v2',
+    tech: ['Nextjs', 'TailwindCSS'],
+    linkDemo: 'https://portfolio-lp-six.vercel.app/',
+    linkCode: 'https://github.com/eengsf/portfolio-lp',
   },
   olshop: {
     img: 'projectweb/olshopeeng.png',
