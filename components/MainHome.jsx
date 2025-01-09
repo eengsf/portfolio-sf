@@ -192,7 +192,7 @@ const MainHome = () => {
           </p>
           <Link
             href={
-              'https://drive.google.com/file/d/1DbHinDeKrgpjMHM7OKMjdtDxdbkWhrcc/view?usp=sharing'
+              'https://drive.google.com/drive/folders/10LcpUpz5IqEQCpXpALl2LmHByCJHD3e-?usp=sharing'
             }
             target="_blank"
             className={`inline-flex gap-2 items-center mt-4 ${

@@ -3,7 +3,7 @@ import MainProjectWebDetail from './MainProjectWebDetail';
 const obj = {
   cloneTokped: {
     img: 'projectweb/tokped1.png',
-    name: 'Clone Tokopedia',
+    name: 'Slicing UI Tokopedia',
     desc: 'A project to clone the interface of Tokopedia with interactive and responsive web implementation using the ShadCN UI component library.',
     tech: ['TypeScript', 'Nextjs', 'TailwindCSS', 'Shadcn UI', 'Redux Toolkit'],
     linkDemo: 'https://clone-tokped.vercel.app/',
