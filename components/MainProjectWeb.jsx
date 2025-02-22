@@ -1,6 +1,17 @@
 import MainProjectWebDetail from './MainProjectWebDetail';
 
 const obj = {
+
+  countrylist:{
+    img: 'projectweb/countrylist-ai.png',
+    name: 'Country List App',
+    desc: 'Proyek ini adalah aplikasi web berbasis Next.js yang terintegrasi dengan GraphQL Apollo untuk menampilkan daftar negara beserta rincian detailnya saat diklik. Aplikasi ini juga memanfaatkan kecerdasan buatan (AI) untuk memberikan rekomendasi atau analisis',
+    tech: ['Nextjs', 'TailwindCSS', 'GraphQL', 'Apollo'],
+    linkDemo: 'https://country-list-ai.vercel.app/',
+    linkCode: 'https://github.com/eengsf/country-list-ai',
+    
+  },
+
   cloneTokped: {
     img: 'projectweb/tokped1.png',
     name: 'Slicing UI Tokopedia',
@@ -22,8 +33,8 @@ const obj = {
       'Redux Toolkit',
       'Firebase',
     ],
-    linkDemo: 'https://rental-mobil-ten.vercel.app/',
-    linkCode: 'https://github.com/eengsf/rental-mobil',
+    linkDemo: 'https://car-rental-two-liart.vercel.app/',
+    linkCode: 'https://github.com/eengsf/car-rental',
   },
 
   dashboardRental: {
@@ -72,6 +83,15 @@ const obj = {
 const MainProjectWeb = () => {
   return (
     <div className="grid w-full grid-cols-1 gap-0 py-8 2md:grid-cols-1 lg:grid-cols-2 sm:grid-cols-2">
+    <MainProjectWebDetail
+        img={obj.countrylist.img}
+        name={obj.countrylist.name}
+        desc={obj.countrylist.desc}
+        tech={obj.countrylist.tech}
+        linkCode={obj.countrylist.linkCode}
+        linkDemo={obj.countrylist.linkDemo}
+      />
+        
       <MainProjectWebDetail
         img={obj.dashboardRental.img}
         name={obj.dashboardRental.name}
