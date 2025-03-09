@@ -49,7 +49,7 @@ const obj = {
       'Redux Toolkit',
       'Firebase',
     ],
-    linkDemo: 'https://dashboard-rental-rust.vercel.app/',
+    linkDemo: 'https://dashboard-rental.vercel.app/dashboard',
     linkCode: 'https://github.com/eengsf/dashboard-rental',
   },
 
@@ -117,14 +117,7 @@ const MainProjectWeb = () => {
         linkCode={obj.cloneTokped.linkCode}
         linkDemo={obj.cloneTokped.linkDemo}
       />
-      <MainProjectWebDetail
-        img={obj.portfolio.img}
-        name={obj.portfolio.name}
-        desc={obj.portfolio.desc}
-        tech={obj.portfolio.tech}
-        linkCode={obj.portfolio.linkCode}
-        linkDemo={obj.portfolio.linkDemo}
-      />
+  
 
       <MainProjectWebDetail
         img={obj.animeListApp.img}
